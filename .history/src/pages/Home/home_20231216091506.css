@@ -1,0 +1,16 @@
+.home {
+     margin-bottom: 3rem;
+     padding: 50px;
+}
+
+/* span {
+     font-size: 16px;
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+} */
+
+span.listCategory {
+     font-size: 16px;
+     color: var(--blue);
+     margin-left: 20px;
+}

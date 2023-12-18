@@ -1,0 +1,27 @@
+img.logonoemie {
+     width: 150px;
+     object-fit: contain;
+}
+
+
+
+a.nav-link {
+     margin-left: 20px;
+     margin-right: 20px;
+     font-size: 18px;
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+}
+
+.container-header {
+     background-color: #281c3a;
+}
+
+button.btn.btn-outline-success {
+     background-color: #3bb695;
+     color: white;
+}
+
+a.nav-link:hover, a.nav-link:hover {
+     color: #3bb695;
+}

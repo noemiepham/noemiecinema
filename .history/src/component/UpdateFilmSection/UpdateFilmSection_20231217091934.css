@@ -1,0 +1,21 @@
+.contentTitleUpdate {
+     background-color: #281c3a;
+     padding-top: 50px;
+     margin-bottom: 50px;
+}
+
+ul.contentTabs {
+     display: inline-flex;
+     padding-left: 0px;
+}
+
+ul.contentTabs li {
+     font-size: 20px;
+     margin-right: 20px;
+     text-transform: uppercase;
+}
+
+button.tocatalog {
+     height: 56px;
+     width: 160px;
+}

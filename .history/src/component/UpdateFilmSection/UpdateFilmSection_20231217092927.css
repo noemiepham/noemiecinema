@@ -1,0 +1,32 @@
+.contentTitleUpdate {
+     background-color: #281c3a;
+     padding-top: 50px;
+     margin-bottom: 50px;
+}
+
+ul.contentTabs {
+     display: inline-flex;
+     padding-left: 0px;
+     height: 30px;
+}
+
+ul.contentTabs li {
+     font-size: 14px;
+     margin-right: 20px;
+     text-transform: uppercase;
+     font-family: 'Open Sans', sans-serif;
+}
+
+ul.contentTabs li:hover {
+     border-bottom: 2px solid #3bb695;
+     cursor: pointer;
+}
+
+ul.contentTabs li:active {
+     border-bottom: 2px solid #3bb695;
+}
+
+button.tocatalog {
+     height: 56px;
+     width: 160px;
+}

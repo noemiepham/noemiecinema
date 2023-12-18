@@ -1,0 +1,15 @@
+.home {
+     margin-bottom: 3rem;
+     padding: 50px;
+}
+
+.section {
+     padding: 70px 0;
+}
+
+
+span.listCategory {
+     font-size: 16px;
+     color: var(--blue);
+     margin-left: 20px;
+}

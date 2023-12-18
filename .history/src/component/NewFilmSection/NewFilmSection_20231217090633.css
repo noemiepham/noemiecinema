@@ -1,0 +1,40 @@
+h2.bigTitle {
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: 300;
+     font-family: 'Ubuntu', sans-serif;
+}
+
+h2.bigTitle b {
+     font-weight: 700;
+}
+
+@media (min-width: 768px) {
+     .bigTitle {
+          font-size: 30px;
+          line-height: 48px;
+          margin-bottom: 30px;
+     }
+}
+
+@media (min-width: 1200px) {
+     .bigTitle {
+          font-size: 36px;
+          line-height: 52px;
+          margin-bottom: 40px;
+     }
+}
+
+.listNewFilms {
+     overflow: auto;
+     white-space: nowrap;
+     position: relative;
+     z-index: 2;
+}
+
+.newFilmSection {
+     background-image: url(../../assets/backgroundCinema.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: fixed;
+}

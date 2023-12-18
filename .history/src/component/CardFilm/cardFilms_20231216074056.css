@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+     box-sizing: border-box;
+}
+
+.cardFilms {
+     display: inline-block;
+     width: 200px;
+     margin: 10px;
+}
+
+.card-image {
+     width: 100%;
+}
+
+.cover-image img {
+     width: 100%;
+     position: relative;
+     border-radius: 8px;
+     object-fit: contain;
+}
+
+
+
+.cover-image {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     border-radius: 8px;
+     overflow: hidden;
+     width: 100%;
+}
+
+.cover-image img {
+     width: 100%;
+     position: relative;
+     z-index: 1;
+}
+
+.cover-image:before {
+     content: '';
+     position: absolute;
+     display: block;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: linear-gradient(90deg, #7866b8 0%,
+               #5ac6bc 100%);
+     z-index: 2;
+     opacity: 0;
+     transition: opacity 0.5s ease;
+     border-radius: 20px;
+}
+
+.cover-image:hover:before {
+     opacity: 0.66;
+}
+
+.cover-image:hover .item-play {
+     opacity: 1;
+     transform: scale(1);
+}
+
+.item-play {
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 56px;
+     height: 56px;
+     border: 2px solid #fff;
+     border-radius: 50%;
+     top: 50%;
+     left: 50%;
+     margin: -28px 0 0 -28px;
+     z-index: 3;
+     transition: 0.5s ease;
+     opacity: 0;
+     transform: scale(0.8);
+}
+
+.item-play svg {
+     width: 24px;
+     height: auto;
+     fill: #fff;
+     margin-left: 1px;
+}
+
+.card-body {
+     padding-left: 20px;
+     display: flex;
+     flex-direction: column;
+}
+
+.card-body>span {
+     display: flex;
+     flex-wrap: wrap;
+     height: 30px;
+}
+
+.titleFilms {
+     color: white;
+     font-size: 16px;
+     line-height: 20px;
+     margin-top: 10px;
+
+}
+
+span.category {
+     color: #3bb695;
+     font-size: 14px;
+     border: 1px solid white;
+     margin: 10px;
+     padding: 5px;
+     border-radius: 5px;
+}
+
+.genres {
+     font-size: 14px;
+     margin-right: 10px;
+     color: #5ac6bc;
+}
+
+.cardRate {}

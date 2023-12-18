@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+     box-sizing: border-box;
+}
+
+.cardFilms {
+     display: inline-block;
+     width: 200px;
+     margin: 10px;
+}
+
+.card-image {
+     width: 100%;
+}
+
+.cover-image img {
+     width: 100%;
+     position: relative;
+     border-radius: 8px;
+     object-fit: contain;
+}
+
+
+
+.cover-image {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     border-radius: 8px;
+     overflow: hidden;
+     width: 100%;
+}
+
+.cover-image img {
+     width: 100%;
+     position: relative;
+     z-index: 1;
+}
+
+.cover-image:before {
+     content: '';
+     position: absolute;
+     display: block;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: linear-gradient(90deg, #7866b8 0%,
+               #5ac6bc 100%);
+     z-index: 2;
+     opacity: 0;
+     transition: opacity 0.5s ease;
+     border-radius: 8px;
+}
+
+.cover-image:hover:before {
+     opacity: 0.66;
+}
+
+.cover-image:hover .item-play {
+     opacity: 1;
+     transform: scale(1);
+}
+
+.item-play {
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 56px;
+     height: 56px;
+     border: 2px solid #fff;
+     border-radius: 50%;
+     top: 50%;
+     left: 50%;
+     margin: -28px 0 0 -28px;
+     z-index: 3;
+     transition: 0.5s ease;
+     opacity: 0;
+     transform: scale(0.8);
+}
+
+.item-play svg {
+     width: 24px;
+     height: auto;
+     fill: #fff;
+     margin-left: 1px;
+}
+
+.card-content {
+     display: flex;
+     flex-direction: column;
+}
+
+div.cardTitle {
+     color: white;
+     line-height: 20px;
+     margin-top: 10px;
+
+}
+
+div.cardTitle h3 {
+     width: 100%;
+     font-size: 16px;
+     line-height: 26px;
+     font-weight: 400;
+     color: #fff;
+     margin-bottom: 0;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     word-wrap: break-word;
+
+}
+
+
+
+div.genres {
+     font-size: 14px;
+     color: #5ac6bc;
+     display: flex;
+     flex-flow: wrap;
+     height: 30px;
+     line-height: 10px;
+}
+
+div.genres span {
+     margin-right: 5px;
+}
+
+.cardRate {
+     font-size: 12px;
+     display: flex;
+     flex-wrap: wrap;
+     color: #fff;
+}

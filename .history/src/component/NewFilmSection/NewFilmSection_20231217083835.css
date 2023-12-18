@@ -1,0 +1,54 @@
+h2.bigTitle {
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: 300;
+     font-family: 'Ubuntu', sans-serif;
+}
+
+h2.bigTitle b {
+     font-weight: 700;
+}
+
+@media (min-width: 768px) {
+     .bigTitle {
+          font-size: 30px;
+          line-height: 48px;
+          margin-bottom: 30px;
+     }
+}
+
+@media (min-width: 1200px) {
+     .bigTitle {
+          font-size: 36px;
+          line-height: 52px;
+          margin-bottom: 40px;
+     }
+}
+
+.filmSection {
+     margin: 0 50px;
+     position: relative;
+     display: block;
+     background-color: #28282d;
+}
+
+.filmSection::before {
+
+     content: '';
+     position: absolute;
+     z-index: 1;
+     pointer-events: none;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background: url(../../assets/backgroundCinema.jpg) no-repeat center/cover;
+     opacity: 0.1;
+}
+
+.listNewFilms {
+     overflow: auto;
+     white-space: nowrap;
+     position: relative;
+     z-index: 2;
+}

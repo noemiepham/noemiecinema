@@ -1,0 +1,25 @@
+.cardfilm img {
+
+     object-fit: contain;
+}
+
+.cardfilm .cover-image {
+     margin-right: 20px;
+
+}
+
+.cardfilm .card-body {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+}
+
+.overview {
+
+     overflow: hidden;
+     display: -webkit-box;
+     -webkit-line-clamp: 6;
+     /* number of lines to show */
+     line-clamp: 6;
+     -webkit-box-orient: vertical;
+}

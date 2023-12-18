@@ -1,0 +1,19 @@
+.footer {
+     bottom: 0;
+     width: 100%;
+     height: 40px;
+     background-color: #281c3a;
+
+     margin-top: 20px;
+}
+
+.footer ul {
+     color: white;
+     display: flex;
+     justify-content: center;
+}
+
+.footer ul li {
+     list-style: none;
+     margin-left: 20px;
+}

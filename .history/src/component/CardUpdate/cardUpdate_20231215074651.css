@@ -1,0 +1,38 @@
+.cardUpdate {
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     width: 100%;
+}
+
+.cardUpdate .cover-image {
+     width: 166px;
+}
+
+@media (min-width: 768px) {
+     .cardUpdate .cover-image {
+          width: 216px;
+     }
+}
+
+@media (min-width: 576px) {
+     .cardUpdate .cover-image {
+          width: 156px;
+     }
+}
+
+.card-body {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+}
+
+.overview {
+
+     overflow: hidden;
+     display: -webkit-box;
+     -webkit-line-clamp: 6;
+     /* number of lines to show */
+     line-clamp: 6;
+     -webkit-box-orient: vertical;
+}
