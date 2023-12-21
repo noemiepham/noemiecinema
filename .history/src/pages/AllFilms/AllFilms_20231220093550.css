@@ -1,0 +1,15 @@
+.allFilmSection {
+     background-color: aqua;
+     height: 500px;
+     width: 100%;
+}
+
+.dropTabs {
+     display: flex;
+     flex-direction: column;
+}
+
+.sectionPaginator {
+     display: flex;
+     color: white;
+}

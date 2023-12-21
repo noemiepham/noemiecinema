@@ -1,0 +1,26 @@
+.allFilmSection {
+     background-color: aqua;
+     height: 500px;
+     width: 100%;
+}
+
+.dropTabs {
+     display: flex;
+     flex-direction: column;
+}
+
+.sectionPaginator {
+     display: flex;
+     color: white;
+     justify-content: space-between;
+}
+
+.flexPaginator {
+     display: flex;
+}
+
+.flexPaginator ul {
+     display: flex;
+}
+
+.flexPaginator ul li {}
