@@ -49,7 +49,7 @@ const Header = () => {
                 />
                 <Button
                   variant="outline-success"
-                  onClick={() => navigate("search")}
+                  onClick={() => navigate("SearchPages")}
                 >
                   Search
                 </Button>

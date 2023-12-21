@@ -4,10 +4,12 @@ import { Container } from "react-bootstrap";
 import "../../component/CardFilm/cardFilms.css";
 import "../../component/UpdateFilmSection/UpdateFilmSection.css";
 import { Row, Col, Dropdown } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./AllFilms.css";
 
 const AllFilms = ({ genres }) => {
   /* navigate to page ditail */
+
 
   /* Tabs content menu to filter */
   const tabsValue = [

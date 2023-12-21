@@ -21,6 +21,7 @@ const AllFilms = ({ genres }) => {
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(5);
   const [activePages, setActivePages] = useState(1);
+  const [values, setValues] = useState("populer");
 
   // console.log(min);
   const Minus = () => {
@@ -40,10 +41,11 @@ const AllFilms = ({ genres }) => {
     "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YTk3M2JlMzJiODZmM2FjNzg4NGJjM2VkYjAwN2U2YSIsInN1YiI6IjY1N2FkNjEyZWM4YTQzMDExYTNiNWJkMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dNZI1WkeIVJ1Nx2AoCXDWFn-yZzKyErXcDQbMc4E2Bs";
 
   let page = activePages;
+  let query = values;
   useEffect(() => {
     const fetchData = async () => {
       console.log(page);
-      let url = `https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=${page}`;
+      let url = `https://api.themoviedb.org/3/search/movie?${query}?language=en-US&page=${page}`;
       try {
         const response = await fetch(url, {
           method: "GET",
@@ -66,64 +68,9 @@ const AllFilms = ({ genres }) => {
     };
 
     fetchData();
-  }, [apiKey, page]);
-  console.log("allfilm", data);
-  return (
-    <div className="allFilms">
-      <div className="contentTitleUpdate">
-        <Container>
-          <Row className="row ">
-            <Col sm={8}>
-              <h2 className="bigTitle">Show All Films</h2>
-              <ul className="contentTabs">
-                {tabsValue.map((item) => (
-                  <li key={item.text}>
-                    <Dropdown>
-                      <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        {item.text}
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu>
-                        {item.menu.map((element) => (
-                          <Dropdown.Item key={element}>{element}</Dropdown.Item>
-                        ))}
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </li>
-                ))}
-              </ul>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <Container>
-        <CardFilms data={data.results} genres={genres} numItemShow={20} />
-      </Container>
-      <Container className="sectionPaginator">
-        <div className="Paginator">
-          <span>
-            Show {activePages} of {data.total_pages}
-          </span>
-        </div>
-        <div className="flexPaginator">
-          <ul>
-            <li onClick={Minus}>⏪</li>
-            {Array.from({ length: data.total_pages }, (_, num) => num + 1)
-              .slice(min, max)
-              .map((item) => (
-                <li
-                  key={item}
-                  onClick={() => setActivePages(item)}
-                  className={item === activePages ? "active" : ""}
-                >
-                  {item}
-                </li>
-              ))}
-            <li>・・・</li>
-            <li onClick={Plus}>⏩</li>
-          </ul>
-        </div>
-      </Container>
-    </div>
+  }, [apiKey, page, query]);
+  console.log("query", data);
+  return ( data
   );
 };
 export default AllFilms;

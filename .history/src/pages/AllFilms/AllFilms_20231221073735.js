@@ -5,6 +5,7 @@ import "../../component/CardFilm/cardFilms.css";
 import "../../component/UpdateFilmSection/UpdateFilmSection.css";
 import { Row, Col, Dropdown } from "react-bootstrap";
 import "./AllFilms.css";
+import PageNavigation from "../../component/PageNavigation/PageNavigation";
 
 const AllFilms = ({ genres }) => {
   /* navigate to page ditail */
@@ -98,7 +99,8 @@ const AllFilms = ({ genres }) => {
       <Container>
         <CardFilms data={data.results} genres={genres} numItemShow={20} />
       </Container>
-      <Container className="sectionPaginator">
+      <PageNavigation data={data.results} />
+      {/*       <Container className="sectionPaginator">
         <div className="Paginator">
           <span>
             Show {activePages} of {data.total_pages}
@@ -122,7 +124,7 @@ const AllFilms = ({ genres }) => {
             <li onClick={Plus}>⏩</li>
           </ul>
         </div>
-      </Container>
+      </Container> */}
     </div>
   );
 };

@@ -7,10 +7,10 @@ import Movies from "./pages/Movies/Movies";
 import Anime from "./pages/Anime/Anime";
 import TVShows from "./pages/TVShows/TVShows";
 import AllFilms from "./pages/AllFilms/AllFilms";
-import SearchPages from "./pages/SearchPages/SearchPages";
 import { useEffect, useState } from "react";
 
 function App() {
+  
   const [genres, setGenres] = useState([]);
   useEffect(() => {
     const fetchtheData = async () => {
@@ -37,7 +37,6 @@ function App() {
             element={<Details gns={genres} />}
           />
           <Route path="/allfilms" element={<AllFilms genres={genres} />} />
-          <Route path="/search" element={<SearchPages genres={genres} />} />
         </Route>
       </Routes>
     </BrowserRouter>

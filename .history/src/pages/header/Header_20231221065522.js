@@ -6,11 +6,9 @@ import "./header.css";
 import Nav from "react-bootstrap/Nav";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
-const Header = () => {
+function Header() {
   const [searchkey, setSearchKey] = useState("");
-  const navigate = useNavigate();
 
   return (
     <div>
@@ -47,12 +45,7 @@ const Header = () => {
                   value={searchkey}
                   onChange={(e) => setSearchKey(e.taget.value)}
                 />
-                <Button
-                  variant="outline-success"
-                  onClick={() => navigate("search")}
-                >
-                  Search
-                </Button>
+                <Button variant="outline-success">Search</Button>
               </Form>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
@@ -60,5 +53,40 @@ const Header = () => {
       </Navbar>
     </div>
   );
-};
+}
 export default Header;
+/*     <>
+      <Navbar
+        data-bs-theme="dark"
+        sticky="top"
+        expand="lg"
+        className="bg-body-tertiary"
+      >
+        <Container className="container-header" fluid>
+          <Navbar.Brand>
+            <img src={logo} alt="logo" className="logonoemie"></img>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav>
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/films">Films</Nav.Link>
+              <Nav.Link href="/anime">Anime</Nav.Link>
+              <Nav.Link href="/cartoon">Cartoon</Nav.Link>
+            </Nav>
+            <Form className="d-flex">
+              <Form.Control
+                type="search"
+                placeholder="Search"
+                className="me-2"
+                aria-label="Search"
+              />
+              <Button variant="outline-success">Search</Button>
+            </Form>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </> 
+    );
+  }
+    */
