@@ -1,0 +1,49 @@
+img.logonoemie {
+     width: 100px;
+     object-fit: contain;
+}
+
+Navbar {
+     position: sticky;
+     top: 0px;
+     margin: 0;
+     z-index: 2000;
+}
+
+a.nav-link {
+     font-size: 18px;
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+     margin-left: 20px;
+}
+
+nav.container-header.navbar.navbar-expand-lg.navbar-light {
+     background-color: #281c3a;
+}
+
+button.btn.btn-outline-success {
+     background-color: #3bb695;
+     color: white;
+}
+
+a.nav-link:hover, a.nav-link:hover {
+     color: #3bb695;
+}
+
+button.btn-close {
+     /* background: white; */
+     background-color: white;
+     color: white;
+}
+
+.offcanvas-header {
+     background-color: #281c3a;
+}
+
+.offcanvas-body {
+     background-color: #281c3a;
+}
+
+button.navbar-toggler.collapsed {
+     background-color: #3bb695;
+}
