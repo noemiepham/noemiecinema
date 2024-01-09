@@ -9,7 +9,7 @@ function CardFilms({ data, numItemShow, Sgenres, Srating }) {
   //console.log("selected", Sgenres);
 
   //console.log("CardFilms context", genres);
-  //console.log("data", data);
+  console.log("data", data);
   //const numItemShow = 12;
 
   const navigator = useNavigate();
@@ -17,6 +17,7 @@ function CardFilms({ data, numItemShow, Sgenres, Srating }) {
     data &&
     data
       .filter((element) => {
+        if (Sgenres === null) return true;
         if (Sgenres === "all") return true;
         const movieGenres = genresFunction(element.genre_ids, genres);
         const result = movieGenres.includes(Sgenres);

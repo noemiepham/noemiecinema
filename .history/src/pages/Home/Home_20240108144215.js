@@ -3,8 +3,8 @@ import NewfilmSection from "../../component/NewFilmSection/NewfilmSection";
 import UpdateFilmSection from "../../component/UpdateFilmSection/UpdateFilmSection";
 import NowWatching from "../../component/NowWatching/NowWatching";
 
-const Home = () => {
-  //console.log("home", Sgenres);
+function Home({ Sgenres = "all" }) {
+  //console.log("home", genres);
   return (
     <>
       {/* card new film for home page */}
@@ -13,6 +13,6 @@ const Home = () => {
       <NowWatching />
     </>
   );
-};
+}
 
 export default Home;

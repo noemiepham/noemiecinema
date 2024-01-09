@@ -17,7 +17,7 @@ const AllFilms = () => {
     genres: "all",
     rating: "all",
   });
-  //console.log("test ", selected.genres);
+  console.log("test ", selected.genres);
   /*  const [SLists, setSLists] = useState("now_playing");
   const [SLanguages, setSLanguages] = useState("en-US");
   const [Sgenres, setSgenres] = useState("all");

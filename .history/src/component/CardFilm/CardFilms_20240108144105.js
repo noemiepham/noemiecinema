@@ -9,7 +9,7 @@ function CardFilms({ data, numItemShow, Sgenres, Srating }) {
   //console.log("selected", Sgenres);
 
   //console.log("CardFilms context", genres);
-  //console.log("data", data);
+  console.log("data", data);
   //const numItemShow = 12;
 
   const navigator = useNavigate();

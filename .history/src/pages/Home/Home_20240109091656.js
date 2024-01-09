@@ -4,11 +4,12 @@ import UpdateFilmSection from "../../component/UpdateFilmSection/UpdateFilmSecti
 import NowWatching from "../../component/NowWatching/NowWatching";
 
 const Home = () => {
-  //console.log("home", Sgenres);
+  const Sgenres = "all";
+  //console.log("home", genres);
   return (
     <>
       {/* card new film for home page */}
-      <NewfilmSection numItemShow={12} />
+      <NewfilmSection numItemShow={12} Sgenres={Sgenres} />
       <UpdateFilmSection numItemShow={6} />
       <NowWatching />
     </>

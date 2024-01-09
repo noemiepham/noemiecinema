@@ -17,7 +17,6 @@ const AllFilms = () => {
     genres: "all",
     rating: "all",
   });
-  //console.log("test ", selected.genres);
   /*  const [SLists, setSLists] = useState("now_playing");
   const [SLanguages, setSLanguages] = useState("en-US");
   const [Sgenres, setSgenres] = useState("all");
@@ -103,7 +102,7 @@ const AllFilms = () => {
 
     fetchData();
   }, [page, token, selected.languages, selected.list]);
-
+  console.log("test ");
   return (
     <div className="allFilms">
       <div className="contentTitleUpdate">

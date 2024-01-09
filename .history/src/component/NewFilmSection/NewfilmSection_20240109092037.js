@@ -7,6 +7,7 @@ function NewfilmSection({ numItemShow }) {
   const token = process.env.REACT_APP_API_TOKEN;
   //console.log("NewfilmSection", genres);
   const [data, setData] = useState([]);
+  const Sgenres = "all";
   useEffect(() => {
     const fetch = require("node-fetch");
     const url =
@@ -31,7 +32,7 @@ function NewfilmSection({ numItemShow }) {
           <b>NEW ITEMS </b>OF THIS SEASON
         </h2>
         <div className="listNewFilms">
-          <CardFilms data={data.results} Sgenres={"all"} />
+          <CardFilms data={data.results} />
         </div>
       </Container>
     </div>
