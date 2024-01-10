@@ -4,10 +4,9 @@
      height: 100px;
      background-color: #281c3a;
 
+     margin-top: 20px;
      display: flex;
      justify-content: space-around;
-     align-items: center;
-
 }
 
 .footer ul {

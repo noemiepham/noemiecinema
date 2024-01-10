@@ -144,7 +144,7 @@ const AllFilms = () => {
                                   break;
                                 default:
                                   setSelected({
-                                    ...selected,
+                                    ...(selected + "🌟"),
                                     rating: element.name,
                                   });
                               }

@@ -145,7 +145,7 @@ const AllFilms = () => {
                                 default:
                                   setSelected({
                                     ...selected,
-                                    rating: element.name,
+                                    rating: element.name + "🌟",
                                   });
                               }
                             }}

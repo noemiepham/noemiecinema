@@ -20,11 +20,7 @@ function Footer() {
           </Link>
         </li>
         <li>
-          <Link
-            href="https://www.linkedin.com/in/noemiehuynh/"
-            rel="noopener"
-            target="_blank"
-          >
+          <Link href="https://www.linkedin.com/in/noemiehuynh/">
             <GitHubIcon style={{ color: green[500], fontSize: 40 }} />
           </Link>
         </li>

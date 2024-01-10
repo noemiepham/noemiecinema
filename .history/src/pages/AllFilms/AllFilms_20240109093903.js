@@ -45,7 +45,7 @@ const AllFilms = () => {
     {
       id: 4,
       text: "Any rating",
-      menu: [{ name: 5 }, { name: 7 }, { name: 9 }],
+      menu: [{ name: "from 5.0" }, { name: "from 7.0" }, { name: "from 8.0" }],
     },
     /*     {
       id: 5,

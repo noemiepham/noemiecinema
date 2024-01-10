@@ -11,20 +11,12 @@ function Footer() {
       <p>Formation React-JavaScripts Greta</p>
       <ul>
         <li>
-          <Link
-            href="https://github.com/noemiepham/noemiecinema"
-            rel="noopener"
-            target="_blank"
-          >
+          <Link href="https://github.com/noemiepham/noemiecinema">
             <LinkedInIcon style={{ color: green[500], fontSize: 40 }} />
           </Link>
         </li>
         <li>
-          <Link
-            href="https://www.linkedin.com/in/noemiehuynh/"
-            rel="noopener"
-            target="_blank"
-          >
+          <Link href="https://www.linkedin.com/in/noemiehuynh/">
             <GitHubIcon style={{ color: green[500], fontSize: 40 }} />
           </Link>
         </li>
