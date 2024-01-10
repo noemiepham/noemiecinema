@@ -1,0 +1,140 @@
+.allFilmSection {
+     background-color: aqua;
+     height: 500px;
+     width: 100%;
+}
+
+.contentTitleUpdate {
+     position: sticky;
+     top: 0px;
+     margin: 0;
+     z-index: 2000;
+}
+
+.dropTabs {
+     display: flex;
+     flex-direction: column;
+}
+
+.sectionPaginator {
+     display: flex;
+     color: white;
+     justify-content: space-between;
+}
+
+.flexPaginator {
+     display: flex;
+}
+
+.filter {
+     position: fixed;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     z-index: 99;
+     top: 70px;
+     bottom: 0;
+     left: 0;
+     width: 280px;
+     background-color: #28282d;
+     box-shadow: none;
+     transition: 0.5s ease;
+     transition-property: transform, box-shadow;
+     transform: translate3d(-280px, 0, 0);
+}
+
+.filter-items {
+     display: none;
+}
+
+button.filter-btn {
+     display: flex;
+     background-color: #3bb695;
+     border-radius: 5px;
+     padding: 0px 20px
+}
+
+@media (min-width: 768px) {
+     .filter-items {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+     }
+
+
+     button.filter-btn {
+          display: none;
+     }
+}
+
+.mfilter {
+     position: fixed;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     z-index: 99;
+     left: 0;
+     width: 300px;
+     background-color: #28282d;
+     box-shadow: none;
+     transition: 0.5s ease;
+     transition-property: transform, box-shadow;
+}
+
+.mfilter ul li {
+     margin-top: 30px;
+}
+
+button#dropdown-basic {
+     width: 150px;
+}
+
+@media (min-width: 576px) {
+     div.mfilter {
+          display: none;
+     }
+}
+
+@media (min-width: 768px) {
+     div.filter-active {
+          transform: translate3d(0, 0, 0);
+     }
+
+}
+
+@media (min-width: 1200px) {
+     ul.contentTabs {
+          display: flex;
+     }
+}
+
+.flexPaginator ul li {
+     cursor: pointer;
+     font-size: 14px;
+     height: 50px;
+     width: 50px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     color: #c7c7c7;
+     text-align: center;
+     border-radius: 8px;
+     font-family: 'Open Sans', sans-serif;
+}
+
+.flexPaginator ul li.active {
+     color: #fff;
+     cursor: default;
+     font-weight: 600;
+     background: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+     box-shadow: 0 0 16px 0 rgba(255, 88, 96, 0.3);
+}
+
+.dropdown-menu {
+     max-height: 70vh;
+     overflow: scroll;
+}
