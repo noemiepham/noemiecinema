@@ -108,7 +108,9 @@ function Details() {
               onClick={() => setPopUp(true)}
             >
               {popUp ? (
-                <Trailer />
+                <div>
+                  <Trailer />
+                </div>
               ) : (
                 <div className="cover-image">
                   <img

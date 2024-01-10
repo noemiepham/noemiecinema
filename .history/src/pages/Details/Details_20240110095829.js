@@ -107,10 +107,11 @@ function Details() {
               className="trailer"
               onClick={() => setPopUp(true)}
             >
-              {popUp ? (
-                <Trailer />
-              ) : (
-                <div className="cover-image">
+              <Row>
+                <ul className="contentTabs"></ul>
+              </Row>
+              <Row>
+                <div className={popUp ? "display-video" : "cover-image"}>
                   <img
                     src={`https://image.tmdb.org/t/p/w500/${data.backdrop_path}`}
                     alt={data.title}
@@ -126,7 +127,10 @@ function Details() {
                     </svg>
                   </span>
                 </div>
-              )}
+                <div className={popUp ? "" : "display-video"}>
+                  <Trailer />
+                </div>
+              </Row>
             </Col>
           </Row>
         </Container>

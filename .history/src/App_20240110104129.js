@@ -43,12 +43,12 @@ function App() {
             <Route path="movies" element={<Movies />} />
             <Route path="tvshows" element={<TVShows />} />
             <Route path="/:id" element={<Details />} />
-            <Route path="allfilms/:id" element={<Details />} />
-            <Route path="movies/:id" element={<Details />} />
-            <Route path="search/:id" element={<Details />} />
+            <Route path="allfilms/details/:id" element={<Details />} />
+            <Route path="movies/details/:id" element={<Details />} />
+            <Route path="search/details/:id" element={<Details />} />
             <Route path="/allfilms" element={<AllFilms />} />
             <Route path="/search" element={<SearchPages />} />
-            <Route path="/:id/trailer" element={<Trailer />} />
+            <Route path="/:id" element={<Trailer />} />
           </Route>
         </Routes>
       </BrowserRouter>

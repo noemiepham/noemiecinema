@@ -29,15 +29,10 @@ function Trailer() {
   //  let firstResult = [];
   //filterdata.map((e) => console.log(e));
   //console.log("filterdata", filterdata);
-  return filterdata
-    ?.slice(0, 1)
-    .map((e, i) => (
-      <ReactPlayer
-        url={`https://youtu.be/${e.key}`}
-        controls={true}
-        width="100%"
-        height="100%"
-      />
-    ));
+  return filterdata?.slice(0, 1).map((e, i) => (
+    <div className="trailer">
+      <ReactPlayer url={`https://youtu.be/${e.key}`} />
+    </div>
+  ));
 }
 export default Trailer;

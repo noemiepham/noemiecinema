@@ -27,7 +27,7 @@ function CardFilms({ data, numItemShow, Sgenres, Srating }) {
         <div
           className="cardFilms"
           key={item.id}
-          onClick={() => navigator("/" + item.id)}
+          onClick={() => navigator("details/" + item.id)}
         >
           <div className="card-image">
             <div className="cover-image">
