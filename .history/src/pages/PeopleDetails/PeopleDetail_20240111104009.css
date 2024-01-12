@@ -1,0 +1,48 @@
+* {
+     box-sizing: border-box;
+}
+
+.wrapper {
+     max-width: 940px;
+     margin: 0 auto;
+}
+
+.wrapper>div {
+     border: 2px solid #5ac6bc;
+     border-radius: 5px;
+     padding: 1em;
+     color: #faf8f8;
+}
+
+.wrapper {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 10px;
+     grid-auto-rows: minmax(100px, auto);
+}
+
+.name {
+     grid-column: 1 / 4;
+     grid-row: 1;
+}
+
+.profile_image {
+     grid-column: 1/2;
+     grid-row: 2 / 6;
+}
+
+.blurb {
+     grid-column: 2/4;
+     grid-row: 3 / 6;
+}
+
+.age {
+     grid-column: 3/4;
+     grid-row: 2;
+}
+
+
+.filmography {
+     grid-column: 1 / 4;
+     grid-row: 6;
+}

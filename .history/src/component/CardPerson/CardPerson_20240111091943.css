@@ -1,0 +1,11 @@
+.image-person {
+     width: 100%;
+     height: calc((100vw - 80px - 60px)/4);
+     max-height: calc((var(--maxPrimaryPageWidth) - 80px - 60px)/4);
+     margin: 0;
+}
+
+.card-person {
+     width: 300px;
+     height: 400px;
+}
